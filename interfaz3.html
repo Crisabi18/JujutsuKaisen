@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#760505">
+    <link rel="shortcut icon" href="assets/icons/64x64.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <title>Jujutsu Kaisen</title>
+</head>
+<body style="background: #760505; ">
+    <h1 id="jjk" class="jjk">JUJUTSU KAISEN</h1>
+    <div class="wrapper">
+        <div class="jj">
+            <h1 style="font-size: 65px;">JUJUTSU</h1>
+        </div>
+
+        <div class="card" width="500px" height="700px" id="card2">
+            <div class="card-body">
+            <center>
+                <h4 id="per" class="text-center text-danger"></h4>
+                <h4 id="nombre" class="text-center text-danger"></h4>
+
+                <img src="assets/img/Jujutsu-Kaisen.jpg" alt="" width="300px" height="320px" class="mt-3 mb-3 img-responsive" id="imgPersonaje2">
+
+                <p class="text-light text-center" id="descripcion"></p>
+            </center>
+            <a href="interfaz2.html"><img class="undo" src="assets/icons/undo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="k">
+            <h1 style="font-size: 70px;">KAISEN</h1>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        let boton = document.getElementById("imgPersonaje2");
+        let innerText;
+        // Obtener los parámetros de la URL
+        var urlParams = new URLSearchParams(window.location.search);
+        
+        // var nomPer = (decodeURIComponent(urlParams.get("per")));
+        var nomb = (decodeURIComponent(urlParams.get("nombre")));
+        var imagen = urlParams.get("personaje2");
+        var descripcion = (decodeURIComponent(urlParams.get("desc")));
+
+        // Mostrar la información en la página
+        // document.getElementById("per").innerText = nomPer;
+        document.getElementById("nombre").innerText = nomb;
+        document.getElementById("imgPersonaje2").src = imagen;
+        document.getElementById ("descripcion").innerText = descripcion;
+
+    boton.addEventListener("click", ()=>{
+    let gojo;
+    innerText = gojo.innerText;
+    
+   })
+    </script>
+    <script src="js/pouch/pouchdb-nightly.js"></script>
+    <script src="js/pouch/app.js"></script>
+    <script src="js/pouch/base.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+</body>
+</html>

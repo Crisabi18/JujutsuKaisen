@@ -1,0 +1,27 @@
+{
+    "short_name": "JUJUTSU KAISEN",
+    "name": "personajes de jujutsu kaisen",
+    "start_url":"index.html",
+    "background-color": "#760505",
+    "theme-color": "#760505",
+    "display": "standalone",
+    "orientation": "portrait", 
+    "icons":[
+        {
+            "src": "assets/icons/64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "assets/icons/128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "assets/icons/256x256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+        
+    ]
+}
