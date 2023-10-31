@@ -18,7 +18,7 @@
     display: none; 
 }
 .card{
-    background: url("assets/img/fondo.jpg") no-repeat;
+    background: url("../assets/img/fondo.jpg") no-repeat;
     background-size: cover;
     grid-column: 2;
     grid-row: 1;
